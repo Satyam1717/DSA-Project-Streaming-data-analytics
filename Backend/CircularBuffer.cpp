@@ -1,4 +1,3 @@
-// CircularBuffer.cpp
 #include "CircularBuffer.hpp"
 
 CircularBuffer::CircularBuffer(size_t maxSize) : maxSize(maxSize), currentSum(0) {}
