@@ -1,4 +1,3 @@
-// EMA.hpp
 #ifndef EMA_HPP
 #define EMA_HPP
 
