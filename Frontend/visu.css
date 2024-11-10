@@ -1,0 +1,47 @@
+.container {  
+    text-align: center;  
+    margin-top: 50px;  
+}  
+
+h1 {  
+    font-size: 2em; /* Larger title font */  
+    color: #333; /* Dark text for contrast */  
+}  
+
+.select-container,  
+.input-container {  
+    margin: 20px;  
+}  
+
+label {  
+    font-size: 1.2em; /* Larger font for labels */  
+    margin-right: 10px; /* Space between label and input */  
+}  
+
+select,  
+input {  
+    padding: 10px; /* Padding for select and input */  
+    border: 1px solid #ccc; /* Light border */  
+    border-radius: 4px; /* Rounded corners */  
+    font-size: 1em; /* Base font size */  
+}  
+
+button {  
+    padding: 10px 20px; /* Button padding */  
+    background-color: #007bff; /* Bootstrap primary color */  
+    color: white; /* White text */  
+    border: none; /* No border */  
+    border-radius: 4px; /* Rounded corners */  
+    cursor: pointer; /* Cursor change on hover */  
+    font-size: 1em; /* Base font size */  
+    transition: background-color 0.3s ease; /* Smooth transition for hover */  
+}  
+
+button:hover {  
+    background-color: #0056b3; /* Darker blue on hover */  
+}  
+
+.error-message {  
+    color: red; /* Red color for error messages */  
+    margin-top: 10px; /* Space above error messages */  
+}

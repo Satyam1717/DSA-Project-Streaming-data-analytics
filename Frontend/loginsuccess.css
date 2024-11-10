@@ -1,0 +1,38 @@
+.container {  
+    text-align: center;  
+    margin-top: 50px;  
+    padding: 20px; /* Padding for overall container */  
+}  
+
+h1 {  
+    font-size: 2em; /* Adjust title font size */  
+    color: #333; /* Dark text for contrast */  
+}  
+
+.link {  
+    margin: 20px 0; /* Space between links */  
+    text-decoration: none; /* Remove underline */  
+    color: blue; /* Link color */  
+    font-size: 1.2em; /* Increase font size */  
+    transition: color 0.3s ease; /* Smooth color transition */  
+}  
+
+.link:hover {  
+    color: darkblue; /* Darker blue on hover */  
+}  
+
+button {  
+    padding: 10px 20px; /* Button padding */  
+    background-color: #007bff; /* Bootstrap primary color */  
+    color: white; /* White text */  
+    border: none; /* No border */  
+    border-radius: 4px; /* Rounded corners */  
+    cursor: pointer; /* Cursor change on hover */  
+    font-size: 1em; /* Base font size */  
+    margin-top: 20px; /* Space above the button */  
+    transition: background-color 0.3s ease; /* Smooth transition for hover */  
+}  
+
+button:hover {  
+    background-color: #0056b3; /* Darker blue on hover */  
+}
