@@ -1,4 +1,3 @@
-// EMA.cpp
 #include "EMA.hpp"
 
 EMA::EMA(size_t maxSize, double alpha) : buffer(maxSize), alpha(alpha), ema(0.0) {}
