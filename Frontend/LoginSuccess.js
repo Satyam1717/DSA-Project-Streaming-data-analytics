@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Visu from './Visu';
 import Ana from './Ana';
-import './loginsuccess.css';
+import './LoginSuccess.css';
 
 
 function LoginSuccess({ onLogout }) {
