@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './visu.css';
+import './Visu.css';
 
 function Visu(){
     const [name, setName] = useState('');
