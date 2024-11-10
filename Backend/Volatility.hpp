@@ -1,4 +1,3 @@
-// Volatility.hpp
 #ifndef VOLATILITY_HPP
 #define VOLATILITY_HPP
 
