@@ -1,6 +1,6 @@
 import React, { useState } from 'react';  
 import { useNavigate } from 'react-router-dom';  
-import './LoginSignup.css'; // Ensure to create a CSS file for styling  
+import './LoginSignup.css'; 
 
 function LoginSignup({ onLoginSuccess }) {  
     const [page, setPage] = useState("login");  
