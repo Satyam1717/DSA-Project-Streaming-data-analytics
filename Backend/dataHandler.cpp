@@ -95,18 +95,5 @@ void DataHandler::fetch(const std::string filePath,
 void DataHandler::getTitleFromFilePath(std::string& title, const std::string& filePath) {
     const std::filesystem::path path = filePath;
 
-    /*std::string temp = "";
-    int num=0;
-
-    for (int i = filePath.length() - 1; i >= 0; i--) {
-        if (filePath[i] == '.') {
-            num = i;
-            break;
-        }
-    }
-
-    for (int i = 0; i < num; i++) {
-        temp = temp + filePath[i];
-    }*/
     title = path.stem().string();
 }
