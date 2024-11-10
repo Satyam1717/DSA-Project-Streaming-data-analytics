@@ -29,7 +29,9 @@ function Visu(){
                     <option value="">Select a name</option>
                     <option value="AAPL">Apple</option>
                     <option value="GOOGL">Google</option>
+                    <option value="AMZN">Amazon</option>
                     <option value="MSFT">Microsoft</option>
+                    <option value="TSLA">Tesla</option>
                 </select>
             </div>
             <div style={{ margin: '20px' }}>
