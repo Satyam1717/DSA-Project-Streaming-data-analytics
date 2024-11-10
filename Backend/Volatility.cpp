@@ -1,4 +1,3 @@
-// Volatility.cpp
 #include "Volatility.hpp"
 #include <cmath>
 
