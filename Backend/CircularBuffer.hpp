@@ -1,4 +1,3 @@
-// CircularBuffer.hpp
 #ifndef CIRCULARBUFFER_HPP
 #define CIRCULARBUFFER_HPP
 
