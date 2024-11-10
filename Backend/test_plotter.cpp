@@ -296,6 +296,11 @@ void fetchAndStoreStockData(const std::string& ticker, int days){
                 plot._window.draw(plot.yDivText[i]);
             }
 
+	    plot._window.draw(plot.labels[0]);
+	    plot._window.draw(plot.labels[1]);
+	    plot._window.draw(plot.title);
+	    plot._window.display();
+
             std::this_thread::sleep_for(std::chrono::milliseconds(500));
         }
 
