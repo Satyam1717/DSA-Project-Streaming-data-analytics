@@ -29,7 +29,7 @@ function Ana() {
 
     if (isFetching) {  
       fetchMetrics(); // Initial fetch  
-      interval = setInterval(fetchMetrics, 5000); // Set interval for fetching metrics  
+      interval = setInterval(fetchMetrics, 3000); // Set interval for fetching metrics  
     }  
 
     return () => {  
