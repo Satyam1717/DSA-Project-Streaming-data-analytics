@@ -16,7 +16,7 @@ Candlestick::Candlestick(const std::string& x, const std::vector<double>& y,
     createText(textPos);
 }
 Candlestick::~Candlestick() {}
-
+// Creates the body of the candlestick 
 void Candlestick::createBody(const Pos& pos, const Pos& origin,
     const double& pixelScaleMultiplier) {
     _bodyHeight = fmax(pixelScaleMultiplier * abs(_open - _close), 1);
@@ -34,6 +34,7 @@ void Candlestick::createBody(const Pos& pos, const Pos& origin,
             _body.setFillColor(sf::Color::Red);
     }
 }
+// Creates the wick (or shadow) of the candlestick
 void Candlestick::createWick(const Pos& pos, const Pos& origin,
     const double& pixelScaleMultiplier) {
     _wick.setPosition(pos.x + PARAMS::CANDLESTICK_BODY_WIDTH / 2 -
@@ -44,6 +45,7 @@ void Candlestick::createWick(const Pos& pos, const Pos& origin,
     _wick.setFillColor(
         sf::Color(DarkBG::wickColor.R, DarkBG::wickColor.G, DarkBG::wickColor.B));
 }
+// Sets up the text label for the candlestick.
 void Candlestick::createText(const Pos& pos) {
     _det.setCharacterSize(PARAMS::LABEL_SIZE_X);
     _det.setStyle(sf::Text::Bold);
@@ -56,11 +58,12 @@ void Candlestick::createText(const Pos& pos) {
             pos.y - _det.getLocalBounds().height - PARAMS::OFFSET_Y));
     _det.setFillColor(sf::Color(DarkBG::textColor.R, DarkBG::textColor.G, DarkBG::textColor.B));
 }
+// Checks if the mouse pointer is over the candlestick (for potential interactivity).
 bool Candlestick::mouseInCandleStick(const Pos& pos) const {
     return (_wick.getGlobalBounds().contains(sf::Vector2f(pos.x, pos.y)) ||
         _body.getGlobalBounds().contains(sf::Vector2f(pos.x, pos.y)));
 }
-
+// Changes the color of the candlestick based on user input
 void Candlestick::changeColor(const Color bullColor, const Color bearColor) {
     if (_bodyHeight == 1)
         _body.setFillColor(sf::Color(DarkBG::wickColor.R, DarkBG::wickColor.G,
