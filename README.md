@@ -1,5 +1,5 @@
 
-Streaming Stock Data Analytics
+Data streaming Analytics --Stock
 An application that retrieves real-time stock market data, processes it for calculating moving averages, volatility, EMA values, and visualizes it through candlestick charts.
 
 Backend Setup Instructions
