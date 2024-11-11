@@ -1,16 +1,35 @@
-# Streaming-Stock-Data-Analytics
-Application that retrieves stock market data in real-time, processes it for calculating moving avg, volatility, EMA values, and visualizes it through candlestick charts.
 
-## Instructions for running backend
+Streaming Stock Data Analytics
+An application that retrieves real-time stock market data, processes it for calculating moving averages, volatility, EMA values, and visualizes it through candlestick charts.
 
-* Add your alpha vantage and finnhub api keys in "test_plotter.cpp" and "main.cpp" files in the backend folder respectively.
-* Install cpp-httplib, sfml, libcurl libraries
-* Run the backend(main.cpp in backend folder) before using frontend
+Backend Setup Instructions
+API Keys:
 
-## Instructions for running frontend
+Insert your Alpha Vantage API key in the test_plotter.cpp file and your Finnhub API key in the main.cpp file, both located in the backend folder.
+Dependencies:
 
-* Install Node.js and create a react app.
-* Add given frontend files in 'src' folder of created react app
-* Make sure to install react-router-dom in same directory where src folder is
-* add "proxy"="http://localhost:8080" this line in package.json file of your react app.
-* To start frontend, run "npm start" command in same directory as react app using terminal 
+Install the following libraries to ensure proper functionality:
+1) cpp-httplib (for HTTP handling)
+2) SFML (for graphical rendering)
+3) libcurl (for data retrieval)
+
+
+Running the Backend:
+
+Start the backend by running main.cpp in the backend folder. Ensure the backend is active before launching the frontend.
+Frontend Setup Instructions
+React Setup:
+
+Install Node.js and create a React app.
+Place the provided frontend files in the src folder of your React app.
+Additional Dependencies:
+
+Install react-router-dom in the same directory where the src folder is located.
+Configuration:
+
+Add the following line to the package.json file of your React app to set up the proxy for backend communication:
+json
+"proxy": "http://localhost:8080"
+Running the Frontend: npm start
+
+Use the command npm start in your terminal, within the React app’s directory, to launch the frontend.
